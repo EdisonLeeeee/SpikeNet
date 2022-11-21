@@ -1,5 +1,6 @@
 # SpikeNet
 > [**Scaling Up Dynamic Graph Representation Learning via Spiking Neural Networks**](https://arxiv.org/abs/2208.10364) (AAAI 2023)
+>
 > Jintang Li, Zhouxin Yu, Zulun Zhu, Liang Chen, Qi Yu, Zibin Zheng, Sheng Tian, Ruofan Wu, Changhua Meng    
 
 **This repository is an official PyTorch implementation of SpikeNet.**
