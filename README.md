@@ -15,7 +15,7 @@ Recent years have seen a surge in research on dynamic graph representation learn
 ## Overview
 |             | DBLP    | Tmall     | Patent     |
 | ----------- | ------- | --------- | ---------- |
-| #nodes      | 28,085  | 577,314   | 2,738,,012 |
+| #nodes      | 28,085  | 577,314   | 2,738,012 |
 | #edges      | 236,894 | 4,807,545 | 13,960,811 |
 | #time steps | 27      | 186       | 25         |
 | #classes    | 10      | 5         | 6          |
@@ -25,13 +25,13 @@ Recent years have seen a surge in research on dynamic graph representation learn
 + Tmall
 + Patent
   
-All dataset can be found at [dropbox](https://www.dropbox.com/sh/palzyh5box1uc1v/AACSLHB7PChT-ruN-rksZTCYa?dl=0). 
+All dataset can be found at [Dropbox](https://www.dropbox.com/sh/palzyh5box1uc1v/AACSLHB7PChT-ruN-rksZTCYa?dl=0). 
 You can download the datasets and put them in the folder `data/`, e.g., `data/dblp`.
 
 ## (Optional) Re-generate node features via DeepWalk
 Since these datasets have no associated node features, we have generated node features via unsupervised DeepWalk method (saved as `.npy` format). 
-You can find them at [dropbox](https://www.dropbox.com/sh/palzyh5box1uc1v/AACSLHB7PChT-ruN-rksZTCYa?dl=0) as well. 
-Only upload `dblp.npy` is uploaded due to size limit and please feel free to contact me if you need `tmall.npy` or `patent.npy`.
+You can find them at [Dropbox](https://www.dropbox.com/sh/palzyh5box1uc1v/AACSLHB7PChT-ruN-rksZTCYa?dl=0) as well. 
+Only `dblp.npy` is uploaded due to size limit of Dropbox. Please feel free to contact me if you need `tmall.npy` or `patent.npy`.
 
 We also provide the script toe generate the node features. Alternatively, you can generate them on your end (this will take about minutes to hours):
 
@@ -68,8 +68,8 @@ SpikeNet
 │   └── utils.py
 ├── generate_feature.py
 ├── main.py
+├── main_static.py
 ├── README.md
-├── run.py
 ├── setup.py
 ```
 # Requirements
@@ -117,13 +117,13 @@ python main.py --dataset patent --hids 512 10 --batch_size 2048 --p 0.5 --train_
 ```
 
 
-# On the effectiveness of stastic graphs
+# On the extention to stastic graphs
 Actually, SpikeNet is not only applicaple for temporal graphs, it is also straightforward to extend to stastic graphs by defining a time step hyperparameter $T$ manually.
 In this way, the sampled subgraph at each time step naturally form graph snapshot. We can use SpikeNet to capture the *evolving* dynamics of sampled subgraphs.
 Due to space limit, we did not discuss this part in our paper. However, we believe this is indeed necessary to show the effectiveness of our work.
 
 
-We provide a simple example for the usage of stastic graphs datasets Flickr and Reddit (be sure you have PyTorch Geometric installed):
+We provide a simple example for the usage on stastic graphs datasets `Flickr` and `Reddit` (be sure you have PyTorch Geometric installed):
 
 ```bash
 # Flickr
