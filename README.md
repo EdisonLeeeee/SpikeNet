@@ -33,7 +33,7 @@ Since these datasets have no associated node features, we have generated node fe
 You can find them at [Dropbox](https://www.dropbox.com/sh/palzyh5box1uc1v/AACSLHB7PChT-ruN-rksZTCYa?dl=0) as well. 
 Only `dblp.npy` is uploaded due to size limit of Dropbox. Please feel free to contact me if you need `tmall.npy` or `patent.npy`.
 
-We also provide the script toe generate the node features. Alternatively, you can generate them on your end (this will take about minutes to hours):
+We also provide the script to generate the node features. Alternatively, you can generate them on your end (this will take about minutes to hours):
 
 ```bash
 python generate_feature.py --dataset dblp
@@ -73,8 +73,6 @@ SpikeNet
 ├── setup.py
 ```
 # Requirements
-
-## Install requirements
 
 ```
 tqdm==4.59.0
