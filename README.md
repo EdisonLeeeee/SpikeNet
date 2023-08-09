@@ -148,9 +148,20 @@ We report Micro-F1 score and the results are as follows:
 # Reference
 ```bibtex
 @inproceedings{li2023scaling,
-  title={Scaling Up Dynamic Graph Representation Learning via Spiking Neural Networks},
-  author={Li, Jintang and Yu, Zhouxin and Zhu, Zulun and Chen, Liang and Yu, Qi and Zheng, Zibin and Tian, Sheng and Wu, Ruofan and Meng, Changhua},
-  booktitle={AAAI},
-  year={2023}
+  author    = {Jintang Li and
+               Zhouxin Yu and
+               Zulun Zhu and
+               Liang Chen and
+               Qi Yu and
+               Zibin Zheng and
+               Sheng Tian and
+               Ruofan Wu and
+               Changhua Meng},
+  title     = {Scaling Up Dynamic Graph Representation Learning via Spiking Neural
+               Networks},
+  booktitle = {{AAAI}},
+  pages     = {8588--8596},
+  publisher = {{AAAI} Press},
+  year      = {2023}
 }
 ```
