@@ -32,7 +32,12 @@ You can download the datasets and put them in the folder `data/`, e.g., `data/db
 ## (Optional) Re-generate node features via DeepWalk
 Since these datasets have no associated node features, we have generated node features via unsupervised DeepWalk method (saved as `.npy` format). 
 You can find them at [Dropbox](https://www.dropbox.com/sh/palzyh5box1uc1v/AACSLHB7PChT-ruN-rksZTCYa?dl=0) as well. 
-Only `dblp.npy` is uploaded due to size limit of Dropbox. Please feel free to contact me if you need `tmall.npy` or `patent.npy`.
+Only `dblp.npy` is uploaded due to size limit of Dropbox. 
+
+(Update) The generated node features for Tmall and Patent datasets have been shared through Aliyun Drive, and the link is as follows: https://www.aliyundrive.com/s/LH9qa9XZmXa. 
+
+Note: Since Aliyun Drive does not support direct sharing of npy files, you will need to manually change the file extension `.txt` to `.npy` after downloading. 
+
 
 We also provide the script to generate the node features. Alternatively, you can generate them on your end (this will take about minutes to hours):
 
